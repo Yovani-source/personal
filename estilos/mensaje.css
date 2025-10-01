@@ -1,0 +1,90 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #ffe6eb; /* Fondo romántico */
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.titulo {
+  margin: 1.5rem 0;
+  font-size: 2.5rem;
+  color: #e63946;
+}
+
+.galeria {
+  display: flex;
+  flex-wrap: wrap;      /* permite que las fotos bajen si no caben */
+  justify-content: center;
+  gap: 20px;            /* espacio entre tarjetas */
+  padding: 20px;
+}
+
+.tarjeta {
+  background: #ffe6eb; /* Igual al fondo del body */
+  border-radius: 12px;
+  padding: 10px;
+  width: 220px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+
+.tarjeta:hover {
+  transform: scale(1.05);
+}
+
+.tarjeta img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.tarjeta p {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #000000;  /* rojo-rosado */
+  font-weight: bold;
+}
+/* Quita la línea azul de los enlaces */
+a {
+  text-decoration: none;
+}
+
+/* Centra el botón y lo deja debajo */
+.contenedor-boton {
+  text-align: center; 
+  margin-top: 40px;   /* espacio respecto a las fotos */
+  margin-bottom: 20px; /* pequeño margen abajo */
+}
+
+/* Estilo del botón */
+.botonBarra {
+  background-color: #ffe6eb; /* mismo color que el fondo */
+  color: #e63946;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: 2px solid #e63946;
+  border-radius: 10px;
+  padding: 10px 25px;
+  cursor: pointer;
+  animation: mover 2s infinite alternate; /* animación */
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Efecto hover */
+.botonBarra:hover {
+  background-color: #e63946;
+  color: #fff;
+  transform: scale(1.1);
+}
+
+/* Animación de movimiento */
+@keyframes mover {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+  100% { transform: translateY(0); }
+}
+
+
+
