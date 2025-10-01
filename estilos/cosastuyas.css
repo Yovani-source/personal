@@ -1,0 +1,112 @@
+/* Sección general */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #ffdde1, #ee9ca7); /* tonos románticos */
+  color: #333;
+  line-height: 1.6;
+}
+
+.momentos {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 30px;
+  background:#ffdde1, #ee9ca7; /* fondo claro */
+  border-radius: 20px;
+  box-shadow: 0px 6px 18px rgba(0,0,0,0.1);
+  text-align: center;
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* Título principal */
+.momentos .titulo {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2.8rem;
+  color: #c2185b; /* rosado cerezo */
+  margin-bottom: 25px;
+}
+
+/* Bloques generales */
+.momentos .bloque {
+  margin: 25px 0;
+  padding: 20px;
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.08);
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.5rem;
+  color: #3a2b2f;
+  line-height: 1.8;
+}
+/* Imagen dentro de bloque */
+.momentos .imagen {
+      background:#ffdde1, #ee9ca7; /* fondo claro */
+     height: 300px;
+     width: 100%;
+     border-radius: 60px;
+     border: 3px solid #ff6f91;
+     max-width: 200px;   /* ancho máximo del bloque */
+     margin: 0 auto 2rem auto;     /* centra horizontalmente */
+}
+
+.momentos .imagen img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0px 6px 16px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+.momentos .imagen img:hover {
+  transform: scale(1.03);
+}
+
+
+/* Frases */
+.momentos .frase blockquote {
+  font-size: 1.6rem;
+  font-style: italic;
+  color: #9c1447;
+  border-left: 4px solid #c2185b;
+  padding-left: 15px;
+  margin: 0;
+}
+
+/* Canción */
+.momentos .cancion h2 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #c2185b;
+}
+
+.momentos .cancion audio {
+  width: 100%;
+  border-radius: 12px;
+  outline: none;
+  margin-bottom: 15px;
+}
+
+.momentos .cancion a {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #c2185b;
+  color: #fff;
+  font-size: 1.2rem;
+  font-family: 'Dancing Script', cursive;
+  text-decoration: none;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+  transition: background 0.3s ease;
+}
+
+.momentos .cancion a:hover {
+  background: #9c1447;
+}
+
+/* Animación */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+

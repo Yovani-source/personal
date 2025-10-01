@@ -1,0 +1,120 @@
+/* ===== Estilos generales ===== */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #ffdde1, #ee9ca7); /* tonos románticos */
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ===== Título ===== */
+.titulo {
+  text-align: center;
+  font-size: 2.8rem;
+  color: #e63946;
+  margin: 2rem auto 1.5rem auto;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.15);
+
+  /* 🔹 Animación flotante */
+  animation: floatTitle 3s ease-in-out infinite;
+}
+
+/* 🔹 Animación igual a la del botón */
+@keyframes floatTitle {
+  0%   { transform: translateY(0px); }
+  50%  { transform: translateY(-10px); } /* un poco más para que resalte */
+  100% { transform: translateY(0px); }
+}
+
+
+/* ===== Recuadro con imagen (puedes poner foto) ===== */
+.recuadro {
+  width: 90%;
+  max-width: 270px;
+  height: 300px;
+  margin: 0 auto 2rem auto;
+  border-radius: 20px;
+  border: 3px solid #ff6f91;
+  background-image: url(../prueba/Photo\ to\ PDF_2025-09-26_12-27-30_page-0024.jpg);/* reemplaza con tu ruta */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* ===== Descripciones ===== */
+.descripcion1,
+.descripcion2 {
+  width: 90%;
+  max-width: 800px;
+  margin: 1.5rem auto;
+  background: transparent;   /* 🔹 ahora se ve igual que el fondo */
+  border: 2px solid #ffb7c5; /* mantiene el borde romántico */
+  border-radius: 15px;
+  padding: 1.5rem;
+  font-size: 1.1rem;
+  text-align: justify;
+  color: #3a3a3a; /* texto oscuro para que sea legible */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.descripcion1:hover,
+.descripcion2:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+/* ===== Animación suave al entrar ===== */
+.descripcion1, .descripcion2, .recuadro, .titulo {
+  animation: fadeIn 1.5s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Contenedor del botón */
+div {
+  text-align: center;   /* centra horizontalmente */
+  margin-top: 2rem;     /* separación arriba */
+}
+
+/* Estilos del botón */
+.botonBarra {
+  background: linear-gradient(135deg, #ff6f91, #ffb7c5);
+  border: none;
+  border-radius: 12px;
+  color: #fff;
+  padding: 12px 25px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 5px 12px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  /* 🔹 Animación infinita */
+  animation: floatButton 3s ease-in-out infinite;
+}
+
+/* 🔹 Animación flotante */
+@keyframes floatButton {
+  0%   { transform: translateY(0px); }
+  50%  { transform: translateY(-8px); }
+  100% { transform: translateY(0px); }
+}
+
+/* 🔹 Hover (cuando pasas el mouse) */
+.botonBarra:hover {
+  background: linear-gradient(135deg, #ffb7c5, #ff6f91);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.3);
+  transform: scale(1.05);
+}
