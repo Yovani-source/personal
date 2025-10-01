@@ -1,112 +1,107 @@
-/* Sección general */
+/* Estilo general */
 body {
   margin: 0;
   padding: 0;
-  font-family: "Poppins", sans-serif;
-  background: linear-gradient(135deg, #ffdde1, #ee9ca7); /* tonos románticos */
-  color: #333;
-  line-height: 1.6;
+  font-family: "Segoe UI", sans-serif;
+   background: linear-gradient(135deg, #ffdde1, #ee9ca7); /* tonos románticos */
+ 
+
 }
 
+/* Sección principal */
 .momentos {
-  max-width: 900px;
-  margin: 50px auto;
-  padding: 30px;
-  background:#ffdde1, #ee9ca7; /* fondo claro */
-  border-radius: 20px;
-  box-shadow: 0px 6px 18px rgba(0,0,0,0.1);
+  max-width: 800px;
+  margin: auto;
+  padding: 2rem;
   text-align: center;
-  animation: fadeIn 2s ease-in-out;
 }
 
-/* Título principal */
-.momentos .titulo {
-  font-family: 'Great Vibes', cursive;
-  font-size: 2.8rem;
-  color: #c2185b; /* rosado cerezo */
-  margin-bottom: 25px;
+/* Título estilo "rosas clásicas" */
+.titulo {
+  font-family: "Brush Script MT", cursive;
+  font-size: 3rem;
+  color: #b41e63; /* tono rosa fuerte */
+   background: linear-gradient(135deg, #ffdde1, #ee9ca7); /* tonos románticos */
+  text-shadow: 2px 2px 4px (180, 30, 99, 0.3);
+  margin-bottom: 1.5rem;
 }
 
-/* Bloques generales */
-.momentos .bloque {
-  margin: 25px 0;
-  padding: 20px;
-  border-radius: 15px;
-  background: #fff;
-  box-shadow: 0px 4px 12px rgba(0,0,0,0.08);
-  font-family: 'Dancing Script', cursive;
-  font-size: 1.5rem;
-  color: #3a2b2f;
-  line-height: 1.8;
-}
-/* Imagen dentro de bloque */
-.momentos .imagen {
-      background:#ffdde1, #ee9ca7; /* fondo claro */
-     height: 300px;
-     width: 100%;
-     border-radius: 60px;
-     border: 3px solid #ff6f91;
-     max-width: 200px;   /* ancho máximo del bloque */
-     margin: 0 auto 2rem auto;     /* centra horizontalmente */
-}
+/* Bloques */
+/* Importa la fuente desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&display=swap');
 
-.momentos .imagen img {
-  width: 100%;
+.bloque {
+   background: linear-gradient(135deg, #ffdde1, #ee9ca7); /* tonos románticos */
   border-radius: 20px;
-  box-shadow: 0px 6px 16px rgba(0,0,0,0.15);
-  transition: transform 0.3s ease;
-}
+  padding: 1rem;
+  margin: 1.5rem auto;
+  max-width: 600px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.993);
 
-.momentos .imagen img:hover {
-  transform: scale(1.03);
-}
-
-
-/* Frases */
-.momentos .frase blockquote {
-  font-size: 1.6rem;
-  font-style: italic;
-  color: #9c1447;
-  border-left: 4px solid #c2185b;
-  padding-left: 15px;
-  margin: 0;
-}
-
-/* Canción */
-.momentos .cancion h2 {
-  font-family: 'Great Vibes', cursive;
-  font-size: 2rem;
-  margin-bottom: 15px;
-  color: #c2185b;
-}
-
-.momentos .cancion audio {
-  width: 100%;
-  border-radius: 12px;
-  outline: none;
-  margin-bottom: 15px;
-}
-
-.momentos .cancion a {
-  display: inline-block;
-  padding: 10px 20px;
-  background: #c2185b;
-  color: #fff;
-  font-size: 1.2rem;
+  /* Aquí el cambio de letra */
   font-family: 'Dancing Script', cursive;
-  text-decoration: none;
+  font-size: 1.2rem;
+  color: #4a2c2a;
+  line-height: 1.6;
+  text-align: center;
+}
+
+
+/* Bloque de imágenes */
+.bloque.imagen img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 15px;
+  border: 3px solid #b41e63;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Frases bonitas */
+.bloque.frase p {
+  font-style: italic;
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+  color: #000000;
+}
+
+/* Canciones */
+.bloque.cancion h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #b41e63;
+}
+
+.bloque.cancion audio {
+  display: block;
+  margin: 0.8rem auto;
+  border-radius: 8px;
+}
+
+/* Botón Volver */
+.botonBarra {
+  background-color: #b41e63;
+  color: white;
+  font-size: 1.3rem;
+  padding: 0.8rem 2rem;
+  border: none;
   border-radius: 12px;
-  box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
-  transition: background 0.3s ease;
+  cursor: pointer;
+  margin-top: 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  animation: mover 2s infinite;
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-.momentos .cancion a:hover {
-  background: #9c1447;
+/* Animación botón (rebote suave) */
+@keyframes mover {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+  100% { transform: translateY(0px); }
 }
 
-/* Animación */
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+/* Hover del botón */
+.botonBarra:hover {
+  background-color: #d64f8d;
+  transform: scale(1.1);
 }
 
