@@ -1,0 +1,96 @@
+body {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #7a1f40;
+}
+
+.quiz {
+  max-width: 700px;
+  margin: 2rem auto;
+  background-color: #ffe3eb;
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.titulo {
+  font-size: 2rem;
+  color: #b3005e;
+  margin-bottom: 1.5rem;
+}
+
+.pregunta {
+  background-color: #ffdde1;
+  border: 2px solid #ee9ca7;
+  border-radius: 15px;
+  padding: 1rem;
+  margin: 1rem 0;
+  text-align: left;
+}
+
+.pregunta h3 {
+  color: #a0004f;
+}
+
+.boton {
+  margin-top: 1.5rem;
+  background-color: #b3005e;
+  color: white;
+  font-size: 1.2rem;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.boton:hover {
+  transform: scale(1.1);
+}
+
+#resultado {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.volver {
+  margin-top: 2rem;
+}
+
+.botonVolver {
+  background-color: #b3005e;
+  color: white;
+  font-size: 1.3rem;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  animation: mover 1.5s infinite alternate ease-in-out;
+  transition: transform 0.2s;
+}
+
+.botonVolver:hover {
+  transform: scale(1.1);
+}
+
+@keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-8px); }
+}
+.recuadro {
+  width: 90%;
+  max-width: 270px;
+  height: 300px;
+  margin: 0 auto 2rem auto;
+  border-radius: 20px;
+  border: 3px solid #ff6f91;
+  background-image: url(../prueba/Photo\ to\ PDF_2025-09-26_12-27-30_page-0025.jpg);/* reemplaza con tu ruta */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}

@@ -1,12 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="estilos/quiz.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amor Divino ❤️‍🩹❤️‍🩹❤️‍🩹</title>
+  <link rel="stylesheet" href="estilos/quiz.css">
 </head>
 <body>
-    
+  <section class="quiz">
+    <h1 class="titulo">QUE TANTO SABES🤪</h1>
+
+    <form id="quizForm">
+      <!-- Pregunta 1 -->
+      <div class="pregunta">
+        <h3>1. ¿Cuál fue nuestra primera salida juntos?🫣</h3>
+        <label><input type="radio" name="q1" value="cine"> Cine</label><br>
+        <label><input type="radio" name="q1" value="comer"> Comer</label><br>
+        <label><input type="radio" name="q1" value="parque"> Un parque</label>
+      </div>
+
+      <!-- Pregunta 2 -->
+      <div class="pregunta">
+        <h3>2. ¿Blessd es mi artista favorito?🫣</h3>
+        <label><input type="radio" name="q2" value="verdadero"> Verdadero</label><br>
+        <label><input type="radio" name="q2" value="falso"> Falso</label>
+      </div>
+
+      <!-- Pregunta 3 -->
+      <div class="pregunta">
+        <h3>3. ¿Qué es lo que realmente me gusta?🫣</h3>
+        <label><input type="radio" name="q3" value="motos"> Motos</label><br>
+        <label><input type="radio" name="q3" value="estudio"> Lo que estudio</label><br>
+        <label><input type="radio" name="q3" value="tu"> Tú</label>
+      </div>
+
+      <!-- Pregunta 4 -->
+      <div class="pregunta">
+        <h3>4. ¿La gaseosa me gusta?🤮</h3>
+        <label><input type="radio" name="q4" value="verdadero"> Verdadero</label><br>
+        <label><input type="radio" name="q4" value="falso"> Falso</label>
+      </div>
+
+      <!-- Pregunta 5 -->
+      <div class="pregunta">
+        <h3>5. ¿Qué detalle me gusta hacerte?🫣</h3>
+        <label><input type="radio" name="q5" value="flores"> Flores</label><br>
+        <label><input type="radio" name="q5" value="cartas"> Cartas</label><br>
+        <label><input type="radio" name="q5" value="sorpresas"> Sorpresas</label><br>
+        <label><input type="radio" name="q5" value="feliz"> Lo que te haga feliz</label>
+      </div>
+
+      <button type="button" onclick="calcularResultado()" class="boton">Terminaste😬</button>
+    </form>
+    <div class="volver">
+  <a href="index.html"><button class="botonVolver">Volver</button></a>
+</div>
+
+    <div id="resultado"></div>
+  </section>
+  <div class="recuadro">
+    </div>
+
+<!-- Botón volver -->
+
+
+
+  <script src="js/quiz.js"></script>
 </body>
 </html>

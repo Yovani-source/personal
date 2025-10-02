@@ -1,0 +1,94 @@
+/* Fondo romántico */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Dancing Script', cursive;
+  background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+  color: #4a2c2a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Sección principal */
+.contador-section {
+  text-align: center;
+  padding: 2rem;
+}
+.recuadro {
+  width: 90%;
+  max-width: 270px;
+  height: 300px;
+  margin: 0 auto 2rem auto;
+  border-radius: 20px;
+  border: 3px solid #ff6f91;
+  background-image: url(../prueba/Photo\ to\ PDF_2025-09-26_12-27-30_page-0024.jpg);/* reemplaza con tu ruta */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Título */
+.titulo {
+  font-size: 2.5rem;
+  color: #b41e63;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+}
+
+/* Subtítulo */
+.subtitulo {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+/* Contenedor del contador */
+#contador {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+/* Cada bloque de tiempo */
+.tiempo {
+  background: rgba(255, 255, 255, 0.6);
+  border: 2px solid #b41e63;
+  border-radius: 15px;
+  padding: 1rem 1.5rem;
+  min-width: 100px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.tiempo span {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #b41e63;
+}
+
+/* Botón Volver */
+.botonBarra {
+  background-color: #b41e63;
+  color: white;
+  font-size: 1.3rem;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  margin-top: 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  animation: latido 1.5s infinite;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+@keyframes latido {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+.botonBarra:hover {
+  background-color: #d64f8d;
+}
