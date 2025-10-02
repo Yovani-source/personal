@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: black;
+  overflow: hidden;
+  height: 100vh;
+}
+
+/* Pantalla principal */
+#mainScreen {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+#warp {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.star {
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+  opacity: 0.8;
+}
+
+#startBtn {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 15px 30px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #0ff, #09f);
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1;
+  box-shadow: 0 0 20px #0ff;
+}
+
+/* Pantalla destino (oculta al inicio) */
+#destination {
+  display: none;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(to bottom, #000011, #001133);
+  color: white;
+  text-align: center;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.frase {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.imagen {
+  border-radius: 15px;
+  box-shadow: 0 0 25px #0ff;
+  margin-bottom: 20px;
+  max-width: 300px;
+}
+
+#backBtn {
+  padding: 12px 25px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #09f, #0ff);
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 0 15px #09f;
+}
+

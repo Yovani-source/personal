@@ -78,3 +78,9 @@ body {
   0% { transform: translateY(0); }
   100% { transform: translateY(-8px); }
 }
+.descripcion {
+  font-size: 1.2rem;
+  color: #7a1f40;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+}
